@@ -16,8 +16,8 @@ if __name__ == '__main__':
     ######## 1) LOAD INPUT DATA ########
     '''
     mng = DataManager()
-    inputs = mng.read_input_data() # read info for the input parameters
-    n_sim, n_param = inputs.shape # Input dataset size
+    inputs = mng.read_input_data()  # read info for the input parameters
+    n_sim, n_param = inputs.shape  # Input dataset size
 
     '''
     ######## 2) LOAD OUTPUT VARIABLE ######## 
@@ -59,4 +59,6 @@ if __name__ == '__main__':
     '''
     ######## 5) SAVE PREDICTIONS
     '''
-    pd.DataFrame(sst).to_csv(Path.home() / 'Desktop/paper_code/results/stacked_single_target.csv')
+    output_folder = Path.home() / 'Desktop/paper_code/results/stacked_single_target/'
+    output_folder.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(sst).to_csv(output_folder / (output_name + '.csv'))
