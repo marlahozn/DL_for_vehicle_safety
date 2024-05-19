@@ -12,5 +12,9 @@ setup(
         "scikit-learn==1.0.2",
         "tensorflow==2.11.0",
         "PyYAML==6.0.1",
+        "torch==1.13.1",
+        "hyperas==0.4.1",
+        "hyperopt==0.2.7",
+        "hyperopt==0.2.7",
     ]
 )
