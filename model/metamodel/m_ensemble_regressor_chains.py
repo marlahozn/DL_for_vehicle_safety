@@ -41,7 +41,7 @@ if __name__ == '__main__':
         - y_vel_pelvic
     '''
 
-    output_curve, output_name = mng.read_output_data(variable_name='x_acc_chest')
+    output_curve, output_name = mng.read_output_data(variable_name='y_moment_neck')
     n_timeSteps = output_curve.shape[1]
 
     '''
