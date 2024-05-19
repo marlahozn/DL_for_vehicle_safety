@@ -10,5 +10,6 @@ setup(
         "numpy==1.21.6",
         "matplotlib==3.5.3",
         "scikit-learn==1.0.2",
-        "tensorflow==2.11.0"]
+        "tensorflow==2.11.0"
+    ]
 )
