@@ -1,8 +1,11 @@
 
 import yaml
+from pathlib import Path
 
-@staticmethod
-def read_config(path: str):
-    with open(path, 'r') as f:
-        config = yaml.load(f, Loader=yaml.SafeLoader)
-    return config
+class Config:
+
+    @staticmethod
+    def read_config(path: Path):
+        with open(path, 'r') as f:
+            config = yaml.load(f, Loader=yaml.SafeLoader)
+        return config
