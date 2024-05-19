@@ -1,0 +1,6 @@
+
+mERC:
+    # CONFIGURE MODEL
+    n_steps_out: 1
+    n_timeSteps_prev: 4
+    n_model_combinations: 75 # combination of input features and immediately previous time steps
