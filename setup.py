@@ -15,6 +15,5 @@ setup(
         "torch==1.13.1",
         "hyperas==0.4.1",
         "hyperopt==0.2.7",
-        "hyperopt==0.2.7",
     ]
 )
