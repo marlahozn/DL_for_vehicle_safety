@@ -27,7 +27,6 @@ if __name__ == '__main__':
         - y_vel_pelvic
     '''
 
-    mng = DataManager()
     selected_curve = 'y_moment_neck'
     output_curve, output_name = mng.read_output_data(variable_name=selected_curve)
     n_timeSteps = output_curve.shape[1]
